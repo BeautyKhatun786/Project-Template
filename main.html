@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainPage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <nav class="navbar">
+         <h4 class="logo">JanAushadhi</h4>
+         <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li class="active,nav-links"><a href="#"></a>Home</li>
+            <li ><a href="#"></a>Store</li>
+            <li ><a href="#"></a>Product</li>
+            <li ><a href="#"></a>About</li>
+            <li ><a  href="#"></a>Contact</li>
+            <li>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+            
+            <li >Login</li>
+           
+         </ul>
+
+         <ul class="nav-links">
+            <li class="active,nav-links,hideOnMobile"><a href="#"></a>Home</li>
+            <li class="hideOnMobile"><a href="#"></a>Store</li>
+            <li class="hideOnMobile"><a href="#"></a>Product</li>
+            <li class="hideOnMobile"><a href="#"></a>About</li>
+            <li class="ctn,hideOnMobile"><a  href="#"></a>Contact</li>
+            <li>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+            
+            <li class="ctn1,hideOnMobile" style="margin-left: 170px;">Login</li>
+             <li onclick="showSidebar()"><a href="#"></a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+         </ul>
+   
+</nav>
+
+
+    <header>
+        <div class="header-content">
+            <h1>Say Goodbye to high medicine prices</h1>
+            <h2>Get the best medical care and advice from our exports.</h2>
+            <h2>We provide high-quality medicines at affordable prices.</h2><br><br>
+            <a href="#" class="ctn">Shop Now</a>
+        </div>
+    </header>
+
+    <script >
+        function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+}
+
+function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+}
+    </script>
+</body>
+</html>
